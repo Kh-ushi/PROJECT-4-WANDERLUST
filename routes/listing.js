@@ -33,7 +33,7 @@ router.route("/")
 
 //SEARCH BAR
 router.get("/",(req,res)=>{
-     res.redirect("/listings);
+     res.redirect("/listings");
 });
 
 router.post("/searchDest",wrapAsync(async (req,res)=>{
