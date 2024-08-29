@@ -32,6 +32,9 @@ router.route("/")
 .post(isLoggedIn,upload.single('listing[image][url]'),validateListing,wrapAsync(createRoute));
 
 //SEARCH BAR
+router.get("/",(req,res)=>{
+    res.redirect("/listings");
+});
 router.post("/searchDest",wrapAsync(async (req,res)=>{
    
   let searchData=req.body.listing.country;
