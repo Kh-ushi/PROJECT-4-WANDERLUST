@@ -1,6 +1,8 @@
 
 PROJECT-4-WANDERLUST
 
+LIVE LINK: https://wanderlust-nrey.onrender.com/listings
+
 Welcome to Project-4-Wanderlust! This GitHub repository contains the source code for a web application designed to help users explore and discover various listings for accommodations, experiences, and activities around the world. The project is part of a larger effort to create a comprehensive travel and adventure platform.
 
 Technologies Used:
