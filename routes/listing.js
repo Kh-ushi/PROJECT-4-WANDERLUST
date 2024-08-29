@@ -33,8 +33,7 @@ router.route("/")
 
 //SEARCH BAR
 router.get("/",(req,res)=>{
-     let dataSearch=await Listing.find({});
-     res.render("listings/index.ejs",{dataSearch});
+     res.redirect("/listings);
 });
 
 router.post("/searchDest",wrapAsync(async (req,res)=>{
