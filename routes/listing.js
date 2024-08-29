@@ -33,8 +33,10 @@ router.route("/")
 
 //SEARCH BAR
 router.get("/",(req,res)=>{
-    res.redirect("/listings");
+     let dataSearch=await Listing.find({});
+     res.render("listings/index.ejs",{dataSearch});
 });
+
 router.post("/searchDest",wrapAsync(async (req,res)=>{
    
   let searchData=req.body.listing.country;
